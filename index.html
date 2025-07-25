@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math-Agent Project Landing Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Math-Agent</h1>
+      <h3 class="subtitle">
+        an Agentic Mathematics AI powered by LLM, RAG & WEB
+      </h3>
+      <div class="source-link-wrapper">
+        <a
+          class="source-link main-btn"
+          href="https://github.com/akhilbrucelee066/MathAgent-codebase"
+          target="_blank"
+        >
+          { } View Source Code
+        </a>
+      </div>
+      <div class="section">
+        <h2>About the Project</h2>
+        <p>
+          <b>Math-Agent</b> is an agentic mathematics assistant that leverages
+          LLMs, Retrieval-Augmented Generation (RAG), and Web Search to provide
+          step-by-step solutions, explanations, and mathematical concepts. It
+          combines a knowledge base, web search, and feedback loop to deliver
+          accurate and context-aware answers to math queries.
+        </p>
+        <ul>
+          <li><b>LLM:</b> Groq/llama-3.3-70b (configurable)</li>
+          <li><b>RAG:</b> MathQA dataset from Hugging Face</li>
+          <li><b>Web Search:</b> Serper web search API</li>
+          <li>
+            <b>Tech Stack:</b> FastAPI, Firebase(data hosting), Python, HTML,
+            CSS, JS
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>System Design Overview</h2>
+        <img src="./HLD.png" alt="High Level Design" class="diagram" />
+        <p style="text-align: center">
+          High Level Design (HLD): Shows the overall architecture and data flow
+          between user, web, LLM, RAG, and feedback modules.
+        </p>
+        <img src="./LLD.png" alt="Low Level Design" class="diagram" />
+        <p style="text-align: center">
+          Low Level Design (LLD): Details the internal logic, agent
+          orchestration, and tool-calling flow.
+        </p>
+        <img src="./flow2.png" alt="Agent Flow" class="diagram" />
+        <p style="text-align: center">
+          Agent Flow: Visualizes the step-by-step process from user query to
+          final answer, including tool invocation and feedback.
+        </p>
+      </div>
+      <div class="section">
+        <h2>Project Documentation</h2>
+        <div class="source-link-wrapper">
+          <a
+            class="source-link main-btn"
+            href="./maths_agent.pdf"
+            target="_blank"
+          >
+            📄 Download: Project Documentation (PDF)
+          </a>
+        </div>
+      </div>
+      <div class="dev-contact">
+        <h4>Developer Contact</h4>
+        <h2 style="color: rgb(255, 255, 255)">
+          <b> Pranay Akhil Jeedimalla </b>
+        </h2>
+        <p>
+          GitHub:
+          <a href="https://github.com/akhilbrucelee066" target="_blank"
+            >@akhilbrucelee066</a
+          >
+        </p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/pranay-akhil-jeedimalla/"
+            target="_blank"
+            >@pranay-akhil-jeedimalla</a
+          >
+        </p>
+        <p>
+          Email:
+          <a href="mailto:jpranayakhil066@gmail.com"
+            >jpranayakhil066@gmail.com</a
+          >
+        </p>
+        <p style="margin-top: 2em; color: #ffd166; font-size: 1.1em">
+          <b>Note:</b> I am working to deploy this agent as a full stack
+          application for public use.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
